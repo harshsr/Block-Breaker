@@ -124,7 +124,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6032884766740748514}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fa20c6a87dac314fbf2364b4b6c6d55, type: 3}
   m_Name: 
@@ -141,4 +141,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 601bd9b9e225f804fbfa74878750cb76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screenWidth: 0
+  mainCameraWidth: 13.3333
+  colliderHalfX: 1

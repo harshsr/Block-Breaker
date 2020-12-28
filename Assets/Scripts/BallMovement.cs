@@ -40,7 +40,10 @@ public class BallMovement : MonoBehaviour
 
         else if(isAttatchedToPaddle==false)
         {
-
+            float velocityY = rb2D.velocity.y;
+            float velocityX = rb2D.velocity.x;
+            float velocity = (velocityX * velocityX) + (velocityY * velocityY);
+            Debug.Log(velocity);
         }
     }
 
@@ -48,5 +51,13 @@ public class BallMovement : MonoBehaviour
     {
         isAttatchedToPaddle = false;
         rb2D.velocity = new Vector2(launchSpeedX, launchSpeedY);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (isAttatchedToPaddle == false)
+        {
+            gameObject.GetComponent<AudioSource>().Play();
+        }
     }
 }
