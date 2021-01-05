@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 1343914873449818985}
   - component: {fileID: 8836764526726865832}
   m_Layer: 0
-  m_Name: SquareBlock
-  m_TagString: Untagged
+  m_Name: Breakable Block 2 hitpoints
+  m_TagString: Breakable Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 63d09dbb3b2f4134abe0e9af3f7229f7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.52516556, g: 1, b: 0.19339621, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -122,4 +122,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 865ede5c2e844844491371699694b42c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelBehav: {fileID: 5883617342503249768, guid: 63857b8594660334eb288dede1142fa3, type: 3}
+  destroySound: {fileID: 8300000, guid: f9d864e3414894744a8c879412bc3dd2, type: 3}
+  destroyVFX: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+  hitpoints: 2
+  breakSprites:
+  - {fileID: 21300000, guid: a621194f0ce9bf14fa605053e474d179, type: 3}
+  - {fileID: 21300000, guid: 9deebbfb4921d33469ec8171b011ea69, type: 3}

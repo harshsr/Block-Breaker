@@ -16,7 +16,6 @@ public class LevelBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(breakableBlocks);
         if (breakableBlocks==0)
         {
             sceneLoader.LoadNextLevel();
@@ -32,4 +31,6 @@ public class LevelBehaviour : MonoBehaviour
     {
         breakableBlocks--;
     }
+
+
 }
