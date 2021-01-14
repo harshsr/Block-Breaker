@@ -15,11 +15,14 @@ public class DestroyBlocks : MonoBehaviour
 
     int pointsToAddToScore;
     int currentHits;
-    float spriteScale
+    float spriteScale;
 
     // Start is called before the first frame update
     void Start()
     {
+        spriteScale = 0.388f;
+
+
         levelBehaviour = FindObjectOfType<LevelBehaviour>();
         levelBehaviour.addBlock();
 
@@ -45,6 +48,7 @@ public class DestroyBlocks : MonoBehaviour
         else
         {
             gameObject.GetComponent<SpriteRenderer>().sprite = breakSprites[currentHits-1];
+            transform.localScale = new Vector3(spriteScale, spriteScale, spriteScale);
         }
     }
 

@@ -43,7 +43,7 @@ public class BallMovement : MonoBehaviour
             float velocityY = rb2D.velocity.y;
             float velocityX = rb2D.velocity.x;
             float velocity = (velocityX * velocityX) + (velocityY * velocityY);
-            Debug.Log(velocity);
+            Debug.Log("x vel = " + velocityX + " \ny vel = " + velocityY);
         }
     }
 
