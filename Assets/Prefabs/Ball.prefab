@@ -135,7 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8470b9ff6953a164d9dc4dd5e187249d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paddleRef: {fileID: 0}
+  paddleRef: {fileID: 6032884766740748514, guid: 9e0b1e73b1928bb448563d372343f3bf, type: 3}
   ballFloatDistance: 0.6
   launchSpeedX: 2
   launchSpeedY: 10
